@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Card  from './components/Cards/Cards'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1> Welcome to our COVID19 MONITOR!</h1>
+      <Card />
     </div>
   );
 }
