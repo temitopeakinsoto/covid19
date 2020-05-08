@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import './App.css';
+import styles from './App.module.css';
 import axios from 'axios';
-import Card  from './components/Cards/Cards'
-import Chart  from './components/Chart/Chart'
+import { Card, Chart, CountryPicker } from './components'
 
 function App() {
   
@@ -17,10 +16,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1> Welcome to our COVID19 MONITOR!</h1>
+    <div className={styles.container}>
+      <h1>COVID19</h1>
       <Card />
       <Chart />
+      <CountryPicker />
     </div>
   );
 }
