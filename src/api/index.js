@@ -2,10 +2,14 @@ import axios from 'axios'
 
 const url = 'https://covid19.mathdro.id/api'
 
-axios.get(url)
-.then(res => {
-    console.log(res.data)
-})
-.catch(e => {
-    console.log("There was an ERROR", e)
-})
+const fetchCovidData = async () => {
+    try {
+        const { data: { confirmed, deaths, recovered} } = await axios.get(url);
+        return { confirmed, deaths, recovered } 
+        
+    } catch (error) {
+        console.log("There was an error", error)
+    }
+}
+
+export default fetchCovidData
