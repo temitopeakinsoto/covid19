@@ -12,4 +12,12 @@ const fetchCovidData = async () => {
     }
 }
 
+export const fetchDailyData = async () => {
+    try {
+        const dailyData = await axios.get(`${url}/`)
+    }catch(err){
+
+    }
+}
+
 export default fetchCovidData

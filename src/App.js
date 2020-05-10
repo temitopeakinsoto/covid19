@@ -3,8 +3,6 @@ import styles from './App.module.css';
 import { Cards, Chart, CountryPicker } from './components'
 import fetchCovidData from './api';
 
-// const res = fetchCovidData();
-// console.log("RESULT FROM API: ", res)
 class App extends React.Component {
 
   state = {
@@ -13,6 +11,7 @@ class App extends React.Component {
 
   async componentDidMount() {
     const fetchedData = await fetchCovidData();
+    console.log("fetched data is ", fetchedData)
     this.setState({ data: fetchedData })
   }
  
