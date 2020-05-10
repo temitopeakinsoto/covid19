@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function CountryPicker(props) {
-    console.log("This props is", props)
+export default function CountryPicker() {
     return (
-        <div>
-            <h1>Country Picker</h1>
-        </div>
+        <form>
+            <select>
+                <option>Select an option from the dropdown</option>
+            </select>
+        </form>
     )
 }
