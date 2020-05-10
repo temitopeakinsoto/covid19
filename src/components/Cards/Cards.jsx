@@ -6,8 +6,7 @@ import cx from 'classnames';
 
 
 export default function Cards(props) {
-    console.log("This props is", props)
-    const { confirmed, deaths, recovered } = props.data;
+    const { confirmed, deaths, recovered, lastUpdate } = props.data;
     if(!confirmed){
         return(<h1>Loading...</h1>)
     }
@@ -20,7 +19,7 @@ export default function Cards(props) {
                     <Typography variant="h5" >
                         <Countup start={0} end={confirmed.value} duration={2.5} separator=","/>
                     </Typography>
-                    <Typography color="textSecondary">DATE</Typography>
+                    <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography variant="body2" >Number of active COVID-19 cases</Typography>
                     </CardContent>              
                    
@@ -31,7 +30,7 @@ export default function Cards(props) {
                     <Typography variant="h5" >
                         <Countup start={0} end={recovered.value} duration={2.5} separator=","/>
                     </Typography>
-                    <Typography color="textSecondary">DATE</Typography>
+                    <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography variant="body2" >Number of recoveries from COVID-19 </Typography>
                     </CardContent>              
                    
@@ -42,7 +41,7 @@ export default function Cards(props) {
                     <Typography variant="h5" >  
                         <Countup start={0} end={deaths.value} duration={2.5} separator=","/>
                     </Typography>
-                    <Typography color="textSecondary">DATE</Typography>
+                    <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
                     <Typography variant="body2" >Number of deaths from COVID-19 cases</Typography>
                     </CardContent>              
                    
