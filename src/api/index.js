@@ -15,7 +15,6 @@ const fetchCovidData = async () => {
 export const fetchDailyData = async () => {
     try {
         const fetchedDailyDataResults = await axios.get(`${url}/daily`);
-        console.log("fetchedDailyDataResults", fetchedDailyDataResults)
         const {data} = fetchedDailyDataResults;
         const modifiedData = data.map(dailyData => ({
             confirmed: dailyData.confirmed.total,
@@ -25,6 +24,19 @@ export const fetchDailyData = async () => {
         return modifiedData
     }catch(err){
 
+    }
+}
+
+export const fetchCountryData = async () => {
+    try {
+
+        const { data: { countries} } = await axios.get(`${url}/countries`);
+        return countries.map(country => country.name);
+        
+    } catch (error) {
+
+        console.log("There was an error while trying to fetch country data", error)
+        
     }
 }
 

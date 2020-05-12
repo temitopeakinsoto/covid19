@@ -20,8 +20,8 @@ class App extends React.Component {
       <div className={styles.container}>
       <h1>COVID19</h1>
       <Cards data={data} />
-      <Chart />
       <CountryPicker />
+      <Chart />
     </div>
     )
  
