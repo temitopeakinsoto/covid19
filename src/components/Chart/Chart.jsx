@@ -4,7 +4,7 @@ import  styles  from './Chart.module.css'
 import { fetchDailyData, fetchCountryData } from '../../api';
 
 export default function Chart(props) {
-    
+
     const { data: { confirmed, recovered, deaths}, country } = props;
     const [dailyData, setDailyData] = useState([]);
 
@@ -56,7 +56,7 @@ export default function Chart(props) {
             }} 
             options = {{
                 legend: {display: false},
-                title: {display: true, text: `Current state is ${country}`}
+                title: {display: true, text: `Current state in ${country}`}
             }}
         />) : null
     )
