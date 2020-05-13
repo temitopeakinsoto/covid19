@@ -8,3 +8,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.image {
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 770px){
+  .image {
+    width: 30%;
+  }
+}
