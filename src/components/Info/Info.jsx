@@ -1,15 +1,15 @@
 import React from "react";
-require('bootstrap')
+// import bootstrap from 'bootstrap'
 import styles from "./Info.module.css";
 
 export default function Info() {
   return (
-    <div>
-      <div>
+    <div className={styles.main}>
+      <div  className={styles.container}>
         <h1>
           Information and updates on the Coronavirus situation in your area
         </h1>
-        <p>Updated: May 13th 2020</p>
+        <h3>Updated: May 13th 2020</h3>
 
         <p>
           The world unites under unpleasant circumstances brought on by the
@@ -28,14 +28,17 @@ export default function Info() {
           internet.
         </p>
       </div>
-      <iframe
-        width="871"
-        height="490"
-        src="https://www.youtube.com/embed/U8r3oTVMtQ0"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div className={styles.videoframe}>
+        <iframe
+          title="Covid19 signs and symptoms"
+          width="100%"
+          height="490"
+          src="https://www.youtube.com/embed/U8r3oTVMtQ0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 }
