@@ -36,7 +36,6 @@ export default function Chart(props) {
         />) : null
     )
 
-    console.log("country data", confirmed, recovered, deaths)
 
     const barChart = (
         confirmed ?
