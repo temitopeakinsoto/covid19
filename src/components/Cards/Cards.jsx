@@ -8,7 +8,7 @@ import cx from 'classnames';
 export default function Cards(props) {
     const { confirmed, deaths, recovered, lastUpdate } = props.data;
     if(!confirmed){
-        return(<h1>Loading...</h1>)
+        return(<h1>Fetching Covid-19 Data...</h1>)
     }
     return (
         <div className={styles.container}>
