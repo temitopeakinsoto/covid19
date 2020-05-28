@@ -33,7 +33,7 @@ class App extends React.Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
-        <footer>Temitope Akinsoto 	&copy; {new Date().getFullYear() }</footer>
+        {/* <footer>Temitope Akinsoto 	&copy; {new Date().getFullYear() }</footer> */}
       </div>
     );
   }
