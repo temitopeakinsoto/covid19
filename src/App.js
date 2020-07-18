@@ -3,7 +3,6 @@ import styles from "./App.module.css";
 import { Cards, Chart, CountryPicker } from "./components";
 import Info from './components/Info/Info'
 import fetchCovidData from "./api";
-import Axios from "axios";
 
 import covid from "./components/images/covid.jpg";
 
@@ -33,7 +32,6 @@ class App extends React.Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
-        {/* <footer>Temitope Akinsoto 	&copy; {new Date().getFullYear() }</footer> */}
       </div>
     );
   }

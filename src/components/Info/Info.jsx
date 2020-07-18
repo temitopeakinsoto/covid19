@@ -14,14 +14,11 @@ export default function Info() {
         <p>
           The world unites under unpleasant circumstances brought on by the
           coronavirus pandemic, impacting everyone’s life directly or
-          indirectly. As the travel industry has been heavily affected,
-          LuggageHero wants to keep in touch with all the travellers out there
-          who are stuck in a foreign city not knowing when they will be able to
-          get back home. During a time when everything is slowing down, we have
+          indirectly. During a time when everything is slowing down, we have
           time to reflect and re-evaluate our core values, keeping in mind all
           the hard-working medical staff and everyone else offering a helping
-          hand during this time. Thank you and stay safe. We created this page
-          where you can find relevant coronavirus information about a city you
+          hand during this time. Thank you and stay safe. This page is a place
+          where you can find relevant coronavirus information about a country you
           are in, and how to protect yourself and others. All the information is
           from the valid and official sources. Everything is in one place, so
           you don’t need to get overwhelmed when searching all over the
